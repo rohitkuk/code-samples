@@ -22,5 +22,4 @@ f = "animation{}.gif".format(datetime.datetime.now()).replace(":","")
 
 from matplotlib.animation import PillowWriter
 
-ani.save(os.path.join(wandb.run.dir,f), writer=PillowWriter(fps=20)) 
 ani.save(f, writer=PillowWriter(fps=20)) 
